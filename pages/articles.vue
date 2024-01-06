@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import pageApiStore from '@/store/page/articles/apiStore'
+import { pageApiStore } from '@/store/page/articles/apiStore'
 
 const apiStore = pageApiStore()
 apiStore.actionTitle()
