@@ -11,13 +11,8 @@
 </template>
 
 <script setup>
-import { pageApiStore } from '@/store/page/articles/apiStore'
-// const { data } = await useFetch('https://qiita.com/api/v2/items?page=1&per_page=2', {
-//   method: "GET",
-//   headers: {
-//     'Authorization': 'Bearer 2950aff10aaded5955af11c26017529143baff77'
-//   }
-// })
+import pageApiStore from '@/store/page/articles/apiStore'
+
 const apiStore = pageApiStore()
 apiStore.actionTitle()
 const data = apiStore.articleTitle
