@@ -2,7 +2,7 @@
   <div>
       <ul>
         <li v-for="article in data" :key="article.id">
-          {{ article.title }}
+          <a :href="article.url">{{ article.title }}</a>
         </li>
       </ul>
     <hr>
