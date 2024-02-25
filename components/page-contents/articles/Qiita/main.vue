@@ -1,8 +1,10 @@
 <template>
   <div class="qiita-articles-container">
     <template v-for="article in data" :key="article.id">
-      <a :href="article.url">{{ article.title }}</a>
-      <br />
+      <article class="qiita-article">
+        <p class="qiita-article__Title">{{ article.title }}</p>
+        <a :href="article.url">a</a>
+      </article>
     </template>
     <hr>
   </div>
