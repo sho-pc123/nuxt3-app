@@ -1,15 +1,7 @@
 <template>
-  <div>
-    <h1>記事一覧</h1>
-    <hr>
-    <NuxtLink to="/qiitaArticles">Articles Page</NuxtLink>
-  </div>
+  <ArticlesTopContent />
 </template>
 
 <script lang="ts" setup>
+import ArticlesTopContent from '@/components/page-contents/ArticlesTopContent/main.vue'
 </script>
-
-
-<style lang="scss" scoped>
-@use './style.scss'
-</style>

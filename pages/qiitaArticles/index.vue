@@ -1,19 +1,7 @@
 <template>
-  <div class="">
-      <ul>
-        <li v-for="article in data" :key="article.id">
-          <a :href="article.url">{{ article.title }}</a>
-        </li>
-      </ul>
-    <hr>
-    <NuxtLink to="/">Top Page</NuxtLink>
-  </div>
+  <QiitaArticles />
 </template>
 
-<script setup>
-import { pageApiStore } from '@/store/page/articles/apiStore'
-
-const apiStore = pageApiStore()
-apiStore.actionTitle()
-const data = apiStore.articleTitle
+<script lang="ts" setup>
+import QiitaArticles from '@/components/page-contents/articles/Qiita/main.vue'
 </script>
