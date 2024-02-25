@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
       <ul>
         <li v-for="article in data" :key="article.id">
           <a :href="article.url">{{ article.title }}</a>
