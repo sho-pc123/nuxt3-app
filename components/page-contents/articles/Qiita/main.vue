@@ -1,7 +1,7 @@
 <template>
   <div class="qiita-articles-container">
     <template v-for="article in data" :key="article.id">
-      <article class="qiita-article">
+      <article class="qiita-article qiita-article__container">
         <p class="qiita-article__Title">{{ article.title }}</p>
         <a :href="article.url">a</a>
       </article>

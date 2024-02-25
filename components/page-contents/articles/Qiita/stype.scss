@@ -1,5 +1,10 @@
 .qiita-article {
   background-color: #fff;;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+  border: 1px solid;
   color: #212121;
+
+  &__container {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
 }
