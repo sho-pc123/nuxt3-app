@@ -1,10 +1,9 @@
 <template>
-  <div>
-    <ul>
-      <li v-for="article in data" :key="article.id">
-        <a :href="article.url">{{ article.title }}</a>
-      </li>
-    </ul>
+  <div class="qiita-articles-container">
+    <template v-for="article in data" :key="article.id">
+      <a :href="article.url">{{ article.title }}</a>
+      <br />
+    </template>
     <hr>
   </div>
 </template>
@@ -16,3 +15,7 @@ const apiStore = pageApiStore()
 apiStore.actionTitle()
 const data = apiStore.articleTitle
 </script>
+
+<style lang="scss" scoped>
+@use './stype.scss'
+</style>
