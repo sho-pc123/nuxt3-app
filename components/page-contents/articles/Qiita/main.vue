@@ -19,5 +19,5 @@ const data = apiStore.articleTitle
 </script>
 
 <style lang="scss" scoped>
-@use './stype.scss'
+  @use './stype.scss'
 </style>
