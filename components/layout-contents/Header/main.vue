@@ -1,6 +1,6 @@
 <template>
     <div class="header header__content">
-      <h1 class="header__title">tec記事一覧</h1>
+      <h1 class="header__title">tec記事一覧サイト</h1>
     </div>
 </template>
 
