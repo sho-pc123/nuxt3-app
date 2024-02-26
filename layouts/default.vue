@@ -1,6 +1,6 @@
 <template>
   <div class="layout-container">
-    <Header />
+    <Header class="layout-container__header" />
     <div class="layout-container__content">
       <slot />
     </div>

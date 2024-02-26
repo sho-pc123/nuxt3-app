@@ -1,4 +1,10 @@
 .layout-container {
+  &__header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
   &__footer {
     position: fixed;
     bottom: 0;

@@ -1,3 +1,9 @@
 <template>
-  <h1>tec記事一覧</h1>
+    <div class="header header__content">
+      <h1 class="header__title">tec記事一覧</h1>
+    </div>
 </template>
+
+<style lang="scss" scoped>
+@use './style.scss'
+</style>
