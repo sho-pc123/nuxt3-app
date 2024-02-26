@@ -1,3 +1,9 @@
 <template>
-  <h1>sho-pc123</h1>
+  <div class="footer footer__content">
+    <span class="footre__title">sho-pc123</span>
+  </div>
 </template>
+
+<style lang="scss" scoped>
+ @use './style.scss'
+</style>
