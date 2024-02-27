@@ -1,4 +1,4 @@
-import { get as fetchTitle } from '@/store/http/articles/api'
+import { get as fetchTitle } from '@/infrastractures/rest/qiita.com/api/v2/items/api'
 
 export const pageApiStore = () => {
   const _state = useState('qiita-article', (): { title: Array } => {
@@ -16,7 +16,6 @@ export const pageApiStore = () => {
   const actions = {
     async actionTitle(): Promise<void> {
       const { data } = await fetchTitle()
-      console.log(data)
       _state.value.title = data.value
     }
   }
