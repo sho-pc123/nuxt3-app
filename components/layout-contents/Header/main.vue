@@ -1,7 +1,7 @@
 <template>
     <div class="header header__content">
       <h1 class="header__title">
-        <NuxtLink to="/">
+        <NuxtLink class="header__link" to="/">
           tec記事一覧サイト
         </NuxtLink>
       </h1>
