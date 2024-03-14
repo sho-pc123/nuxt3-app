@@ -3,5 +3,5 @@
 </template>
 
 <script lang="ts" setup>
-import QiitaArticles from '@/components/page-contents/articles/Qiita/main.vue'
+import QiitaArticles from '@/components/page-contents/articles/Qiita/index.vue'
 </script>

@@ -9,8 +9,8 @@
 </template>
 
 <script lang="ts" setup>
-import Header from '@/components/layout-contents/Header/main.vue'
-import Footer from '@/components/layout-contents/Footer/main.vue'
+import Header from '@/components/layout-contents/Header/index.vue'
+import Footer from '@/components/layout-contents/Footer/index.vue'
 </script>
 
 <style lang="scss" scoped>
