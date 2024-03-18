@@ -1,6 +1,6 @@
 <template>
-  <div class="footer footer__content">
-    <span class="footer__title">sho-pc123</span>
+  <div class="footer">
+    <span>sho-pc123</span>
   </div>
 </template>
 
