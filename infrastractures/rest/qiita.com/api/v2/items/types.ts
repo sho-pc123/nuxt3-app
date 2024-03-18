@@ -35,7 +35,7 @@ interface TeamMemberShip {
   name: string
 }
 
-export interface QiitaArticleResponse {
+interface QiitaArticleResponse {
   rendered_body: string
   body: string
   coediting: boolean
@@ -55,4 +55,8 @@ export interface QiitaArticleResponse {
   teamMenmbership: TeamMemberShip
   organizationUrlName: string
   slide: boolean
+}
+
+export interface QiitaArticlesState {
+  articles: QiitaArticleResponse[] | null
 }

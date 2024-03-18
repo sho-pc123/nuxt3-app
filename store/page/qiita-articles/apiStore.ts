@@ -1,22 +1,23 @@
-import { get as fetchTitle } from '@/infrastractures/rest/qiita.com/api/v2/items/api'
+import { get as getArticles } from '@/infrastractures/rest/qiita.com/api/v2/items'
+import type {QiitaArticlesState} from '@/infrastractures/rest/qiita.com/api/v2/items'
 
 export const pageApiStore = () => {
-  const _state = useState('qiita-article', (): { title: Array } => {
+  const _state = useState<QiitaArticlesState>('qiita-article', () => {
     return {
-      title: []
+      articles: null
     }
   })
 
   const getters = {
     articleTitle: computed(() => {
-      return _state.value.title
+      return _state.value.articles
     })
   }
 
   const actions = {
-    async actionTitle(): Promise<void> {
-      const { data } = await fetchTitle()
-      _state.value.title = data.value
+    async fetchArticles(): Promise<void> {
+      const { data } = await getArticles()
+      _state.value.articles = data.value
     }
   }
 
