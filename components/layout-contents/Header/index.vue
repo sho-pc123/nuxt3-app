@@ -1,5 +1,5 @@
 <template>
-    <div class="header header__content">
+    <div class="header">
       <NuxtLink to="/">
         <h1>tec記事一覧サイト</h1>
       </NuxtLink>

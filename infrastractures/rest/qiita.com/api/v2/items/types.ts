@@ -35,7 +35,7 @@ interface TeamMemberShip {
   name: string
 }
 
-interface QiitaArticleResponse {
+export interface QiitaArticleResponse {
   rendered_body: string
   body: string
   coediting: boolean
