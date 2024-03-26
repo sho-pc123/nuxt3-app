@@ -9,7 +9,7 @@ export const pageApiStore = () => {
   })
 
   const getters = {
-    articleTitle: computed(() => {
+    articles: computed(() => {
       return _state.value.articles
     })
   }

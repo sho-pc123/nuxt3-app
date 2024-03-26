@@ -20,11 +20,10 @@ import { pageApiStore } from '@/store/page/qiita-articles/apiStore'
 
 /** Page API Store */
 const apiStore = pageApiStore()
-apiStore.actionTitle()
+apiStore.fetchArticles()
 
 /** Qiita 記事一覧データ */
-const data = apiStore.articleTitle
-console.log(data)
+const data = apiStore.articles
 </script>
 
 <style lang="scss" scoped>
