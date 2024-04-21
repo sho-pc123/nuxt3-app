@@ -21,7 +21,10 @@ export const pageApiStore = () => {
   const actions = {
     async fetchArticles(): Promise<void> {
       const { data } = await getArticles()
-      _state.value.articles = data.value
+      if(data === null){
+        throw new Error('failed to fetch qiita articles')
+      }
+      _state.value.articles = data.value as QiitaArticleResponse[]
     }
   }
 
