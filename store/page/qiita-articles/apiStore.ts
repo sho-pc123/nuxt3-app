@@ -10,6 +10,10 @@ export const pageApiStore = () => {
   })
 
   const getters = {
+    /**
+     * Qiita記事一覧取得
+     * @returns Qiita記事一覧取得結果
+    */
     articles: computed<QiitaArticleResponse[]>(() => {
       if(_state.value.articles === null){
         throw new Error('_state.value.articles is null')
@@ -19,6 +23,9 @@ export const pageApiStore = () => {
   }
 
   const actions = {
+    /**
+     * Qiita記事一覧取得
+    */
     async fetchArticles(): Promise<void> {
       const { data } = await getArticles()
       if(data === null){
