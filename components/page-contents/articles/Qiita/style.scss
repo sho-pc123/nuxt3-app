@@ -6,4 +6,17 @@
     padding: 15px;
     margin-bottom: 15px;
   }
+
+  .item {
+    &__author-information {
+      display: flex;
+      align-items: center;
+    }
+
+    &__image {
+      height: 16px;
+      width: 16px;
+      margin-left: 15px;
+    }
+  }
 }
