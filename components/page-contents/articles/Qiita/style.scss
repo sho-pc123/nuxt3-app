@@ -12,10 +12,12 @@
       display: flex;
     }
 
-    &__image {
-      height: 32px;
-      width: 32px;
-      margin-left: 15px;
+    .header {
+      &__image {
+          height: 32px;
+          width: 32px;
+          margin-left: 15px;
+      }
     }
   }
 }
