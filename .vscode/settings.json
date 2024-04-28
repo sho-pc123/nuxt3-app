@@ -1,0 +1,7 @@
+{
+  // ESLint v9 以降は必要なくなる可能性がある
+  "eslint.experimental.useFlatConfig": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}

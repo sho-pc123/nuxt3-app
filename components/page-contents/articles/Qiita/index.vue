@@ -27,7 +27,7 @@ const apiStore = pageApiStore()
 apiStore.fetchArticles()
 
 /** Qiita 記事一覧データ */
-const data = apiStore.articles
+      const data = apiStore.articles
 </script>
 
 <style lang="scss" scoped>
