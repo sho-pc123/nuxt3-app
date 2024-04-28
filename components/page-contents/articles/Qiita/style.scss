@@ -10,13 +10,25 @@
   .item {
     &__header {
       display: flex;
+      align-items: center;
     }
 
     .header {
       &__image {
-          height: 32px;
-          width: 32px;
-          margin-left: 15px;
+        height: 32px;
+        width: 32px;
+      }
+
+      &__information-area {
+        margin-left: 8px;
+      }
+
+      &__author-name {
+        margin: 0;
+      }
+
+      &__post-date {
+        margin: 0;
       }
     }
   }
