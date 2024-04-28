@@ -10,7 +10,7 @@
               <p>投稿日：{{ article.created_at.substr(0, 10) }}</p>
             </div>
           </div>
-          <p class="item__title">{{ article.title }}</p>
+          <h2 class="item__title">{{ article.title }}</h2>
           <a :href="article.url">a</a>
         </div>
       </template>
