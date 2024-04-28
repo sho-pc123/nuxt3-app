@@ -3,12 +3,14 @@
     <article class="qiita-articles__item-list">
       <template v-for="article in data" :key="article.id">
         <div class="qiita-articles__item item">
-          <p>投稿日{{ article.created_at.substr(0, 10) }}</p>
-          <div class="item__author-information">
-            <p>投稿者{{ article.user.id }}</p>
+          <div class="item__header">
             <NuxtImg class="item__image" :src="article.user.profile_image_url" />
+            <div class="item__information">
+              <p>投稿者：{{ article.user.id }}</p>
+              <p>投稿日：{{ article.created_at.substr(0, 10) }}</p>
+            </div>
           </div>
-          <p class="qiita-article__Title">{{ article.title }}</p>
+          <p class="item__title">{{ article.title }}</p>
           <a :href="article.url">a</a>
         </div>
       </template>
