@@ -3,6 +3,7 @@
     <article class="qiita-articles__item-list">
       <template v-for="article in data" :key="article.id">
         <div class="qiita-articles__item item">
+          <a class="item__link" :href="article.url" />
           <div class="item__header">
             <NuxtImg class="header__image" :src="article.user.profile_image_url" />
             <div class="header__information-area">
@@ -11,7 +12,6 @@
             </div>
           </div>
           <h2 class="item__title">{{ article.title }}</h2>
-          <a :href="article.url">a</a>
         </div>
       </template>
     </article>
