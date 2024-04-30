@@ -4,14 +4,18 @@
       <template v-for="article in data" :key="article.id">
         <div class="qiita-articles__item item">
           <a class="item__link" :href="article.url" />
-          <div class="item__header">
-            <NuxtImg class="header__image" :src="article.user.profile_image_url" />
-            <div class="header__information-area">
-              <p class="header__author-name">{{ article.user.id }}</p>
-              <p class="header__post-date">{{ article.created_at.substr(0, 10) }}</p>
+          <div class="item__contents">
+            <div class="item__header">
+              <NuxtImg class="header__image" :src="article.user.profile_image_url" />
+              <div class="header__information-area">
+                <p class="header__author-name">{{ article.user.id }}</p>
+                <p class="header__post-date">{{ article.created_at.substr(0, 10) }}</p>
+              </div>
             </div>
+            <h2 class="item__title">
+              <a :href="article.url" class="item__title-link">{{ article.title }}</a>
+            </h2>
           </div>
-          <h2 class="item__title">{{ article.title }}</h2>
         </div>
       </template>
     </article>
