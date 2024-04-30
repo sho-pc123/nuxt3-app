@@ -10,6 +10,9 @@ export default defineNuxtConfig({
       }
     }
   },
+  css: [
+    '@/asset/css/_root.scss'
+  ],
   devtools: { enabled: true },
   ssr: true
 })
